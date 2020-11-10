@@ -16,4 +16,16 @@ class Show < ActiveRecord::Base
     Show.order(rating: :desc).last 
   end 
   
+  def Show::ratings_sum 
+    Show.sum(:ratings)
+  end 
+  
+  def Show::popular_shows 
+    
+  end 
+  
+  def Show::shows_by_alphabetical_order
+    
+  end 
+  
 end 
